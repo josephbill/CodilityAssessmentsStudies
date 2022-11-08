@@ -1,0 +1,12 @@
+Given an n-digit large number in form of string, check whether it is divisible by 7 or not.
+ Print 1 if divisible by 7, otherwise 0.
+
+Given a string check if it is Pangram or not. A pangram is a sentence containing every letter in the English Alphabet (either lowercase or uppercase or both). 
+For example, we say the letter A is present in the string if either 'a'
+ is present or 'A' is present.
+
+
+Given two strings a and b.
+The task is to find if the string 'b' can be obtained by rotating anothe
+string 'a' by exactly 2 places.
+

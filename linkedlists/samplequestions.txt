@@ -1,0 +1,17 @@
+1. Write a GetNth() function that takes a linked list and an integer
+index and returns the data value stored in the node at that index position. 
+
+2. Given a Linked List and a number N,
+ write a function that returns the value at the Nth node from the end of the Linked List.
+
+3. Given a singly linked list, 
+find the middle of the linked list. 
+For example, if the given linked list is 1->2->3->4->5 then the output should be 3. 
+If there are even nodes, then there would be two middle nodes, 
+we need to print the second middle element. For example, 
+if the given linked list is 1->2->3->4->5->6 then the output should be 4. 
+
+
+4. Given a linked list and a key ‘X‘ in, 
+the task is to check if X is present in the linked list or not. 
+
