@@ -13,10 +13,11 @@ let head; //head of lists
 /* This function prints contents of linked list starting from head */
 
 function printList() {
-    let n  = head;
+    let n  = head_node;
     while (n != null){
-        document.write(n.data + " ");
-        n = n.next;
+       // document.write(n.data + " ");
+       console.log(n.data + "") 
+       n = n.next;
     }
 }
 
@@ -32,14 +33,13 @@ function printList() {
   
         head_node.next = second_node; // Link first node with the second node
         second_node.next = third_node; // Link second node with the third node
-  
-        printList();
-
+printList();
 
 // sample question
 //User function Template for javascript
 // printing items in a linked list on a single line. 
 /*LINKED LIST NODE
+
 class Node {
   constructor(x){
     this.data = x;

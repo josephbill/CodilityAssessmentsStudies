@@ -1,0 +1,7 @@
+1. The String object is used to represent and manipulate a sequence of characters.
+2.  Most used operations on strings include checking their length, appending += , concatenate using + ,
+checking existence or location of substrings with the indexOf() method, and extracting substrings 
+with the substring() method. 
+3. Create strings. 
+   - can be created as primitives ie. via methods 
+   - or as objects using the String() constructor.

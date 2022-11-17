@@ -1,0 +1,6 @@
+https://codeto.win/problem/1024
+https://leetcode.com/problems/two-sum/description/
+https://leetcode.com/problems/delete-and-earn/description/
+https://www.geeksforgeeks.org/maximize-sum-selected-numbers-performing-following-operation/
+One graph-based question.
+Lexicographically smallest string. (prepare strings as well).

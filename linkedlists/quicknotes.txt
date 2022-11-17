@@ -1,0 +1,65 @@
+1. Linked Lists : this is an example of a linear data structure 
+
+Linear data structure : 
+basically where all data elements are arranged sequentially i.e. each and every element is attached or 
+to its previous and next adjacent. 
+Therefore we can transverse all elements in a single run.  
+other examples are : arrays ,stacks , queues 
+
+2. Unlike arrays data is not stored at a contiguous location
+
+Contiguous memory allocation allocates consecutive
+blocks of memory to a file/process. 
+
+Non-Contiguous memory allocation allocates separate
+blocks of memory to a file/process.
+
+Why a linked list and not an array ? 
+
+1. The size of an array is always fixed : So we must know the upper limit on the number of elements in advance 
+2. Insertion of a new element / removal of an item is an expensive process 
+think of it this way , arrays are stored in a contiguous memory function 
+
+in a sample array of fruits say 
+
+array fruits [] = ['cherry', 'mango' , 'watermelon']
+
+if i want to insert a new fruit : apple 
+
+and maintain the sorted order i.e. ascending alphabetical order ,
+we have to move all elements from the start of the array
+
+removal will work the same , if say we remove mango , everything 
+after cherry needs to be moved first 
+
+In a linked list : f we have the head node then we can traverse to any node through it and insert new node at the required position.
+i.e. non contigous memory allocation
+
+
+Advantages of Linked Lists over arrays 
+1. Dynamic Array. 
+2. Ease of insertion and deletion 
+
+Drawbacks 
+1. Random access is not allowed , we have to access the 
+data sequentially
+2. Extra memory space for a pointer is required with each element of the list. 
+3. Not cache friendly.
+Since array elements are contiguous locations, there is locality of reference which is not there in case of linked lists.
+
+
+Types of Linked Lists 
+1. Simple Linked Lists : one can move or traverse the linked list in only one direction
+2. Doubly Linked Lists : one can move or traverse the linked list in both directions (Forward and Backward)
+3. Circular Linked Lists : here the last node of the linked list contains the link of the first/head node of the linked list in its next pointer and the first/head node contains the link of the last node of the linked list in its prev pointer
+
+A node is simply each element that is linked in linked Lists
+//
+The first node of the list is called as head, and the last node of the list is called a tail.
+
+- Each node in a list consists of atleast two parts 
+: A data item : we can store integers, strings , or any type of data
+: Pointer or reference : to the next node , think of it as a address to the next node 
+
+
+

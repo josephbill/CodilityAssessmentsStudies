@@ -1,0 +1,22 @@
+1. Javascript arrays are basically Ordered Lists 
+2. Arrays are a collection data type 
+3. Collections : hold multiple pieces of data 
+4. Scalar data types can be put on a scale i.e. strings , numbers etc. 
+5. Array thus are collections that hold multiple pieces of data under one name 
+6. The item position in the array is reffered to as its index. 
+
+
+Quick pointers 
+1. Arrays are resizable , and can contain a mix of different data types 
+2. JS arrays are not associative arrays -> thus no access with key like in an object : access is through indexes 
+3. JS arrays start at 0
+4. JS arrays create shallow copies i.e. 
+
+A shallow copy of an object is a copy whose properties share the same references 
+(point to the same underlying values) as those of the source object from which the copy was made.
+As a result, when you change either the source or the copy, you may also cause the other object to change 
+too — and so, you may end up unintentionally causing changes to the source or copy that you don't expect. 
+That behavior contrasts with the behavior of a deep copy, in which the source and copy are completely 
+independent.
+
+
