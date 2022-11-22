@@ -1,0 +1,10 @@
+// objects : standalone entities with properties and types.
+// capabilities of an OOP language 
+ 1. Encapsulation : capability of storing related info 
+ 2. Aggregation : capability of storing one object inside another object 
+ 3. Inheritance : //class based syntax OOP. 
+ 4. Polymorphism : one function being used in a variety of ways.
+
+// 
+
+
