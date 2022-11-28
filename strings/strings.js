@@ -13,7 +13,7 @@ const b = new String("A string object")
 function areEqualCaseInsensitive(str1, str2) {
     return str1.toUpperCase() === str2.toUpperCase();
   }
-
+//more
 //popular JS methods on strings include 
 
 // String length : captures lenght of string 
