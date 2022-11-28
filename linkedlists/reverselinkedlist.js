@@ -18,19 +18,26 @@ class Node {
 
 //function to reverse the list 
 function reverse_list(node) {
+    //the variables here represent the node pointers
     let prev = null;
     let current = node;
     let next = null;
 
     while (current != null){
+        //this process happens to each node 
         //swapping the variables for reversing the linked list 
-        next = current.next;
-        current.next = prev;
-        prev = current;
-        current = next;
+        //1234 
+        // 1 is the head //4 is the tail 
+        // output should be 4 is the head and 1 is the tail
+        //swapping the pointers 
+        next = current.next;  // to save the intial pointer of start node //next here in iteration: is 2
+        current.next = prev; // this line makes current.next which is at node 1 , change its pointer to prev. i.e reversed direction //because prev. at this equal to null 
+        //updating the pointers 
+        prev = current; // previous pointer now stores the active node i.e. 1 in first iteration // updating its location in node it was null now its the active node 
+        current = next; // current is assigned the next pointer which is the next node in list : so that iteration goes on 
     }
-    node = prev;
-    return node;
+    node = prev; //so node equals to the previous node / pointer ->which is current 
+    return node; //output
 
 }
 
@@ -55,3 +62,7 @@ printList(head);
 head = reverse_list(head);
 //after reversal 
 printList(head);
+
+
+//more here 
+//https://www.youtube.com/watch?v=S9kMVEUg-x4
