@@ -1,0 +1,14 @@
+//loops do repeated tasks on a condition
+// 1. Iterative Methods : naive method 
+// console.log(1);
+
+// loop. (starting point/exit point , condition)
+
+//types of loops 
+// 1. Entry Controlled loops : condition is tested b4 entering the loop body 
+// For loop , While Loop.
+// 2. Exit Controlled loops : condition is tested at the end of the loop body 
+// do-while loop.
+
+// Collections : Data Structures : Arrays / Object : Trasverse // loops 
+// For .. in , For ... of , For ... each 
