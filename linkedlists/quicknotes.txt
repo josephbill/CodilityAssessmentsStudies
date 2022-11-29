@@ -8,11 +8,11 @@ other examples are : arrays ,stacks , queues
 
 2. Unlike arrays data is not stored at a contiguous location
 
-Contiguous memory allocation allocates consecutive blocks of memory to a file/process. 
-Non-Contiguous memory allocation allocates separate blocks of memory to a file/process.
+Contiguous memory allocation allocates consecutive blocks of memory to a file/process. : releases blocks from the whole space as per requirement 
+Non-Contiguous memory allocation allocates separate blocks of memory to a file/process. : gets whole space / sub divides it 
 
 Why a linked list and not an array ? 
-
+ 
 1. The size of an array is always fixed : So we must know the upper limit on the number of elements in advance 
 2. Insertion of a new element / removal of an item is an expensive process 
 think of it this way , arrays are stored in a contiguous memory function 
