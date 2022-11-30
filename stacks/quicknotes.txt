@@ -1,0 +1,23 @@
+1. Stacks are a linear data structure type which follow a particular order in which 
+the operations are performed 
+2. The order maybe 1. LIFO (Last in First Out) : element added last is accessed first
+ or 2. FILO (First in Last Out) : elemented added first is accessed last 
+3. Arrays are used to implement stacks 
+4. The basic skeleton of a stack will look like : 
+An object stack is created using the new operator and various methods are accessed thro'
+the object 
+
+    class Stack {
+        constructor(){
+            this.items = [];
+        }
+        //
+    }
+5. Common functions implemented are : push(item) : to add to stack 
+                                      pop() :  returns top most element of stack and removes it 
+                                      peek() : returns top most elements in the stack and does not delete it
+6. Helper methods include : 
+   isEmpty(); = returns true if a stack is isEmpty
+   printStack(); = returns a string in which all elements of the stack are concatenated 
+
+

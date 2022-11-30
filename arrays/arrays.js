@@ -352,13 +352,13 @@ for (const arrayValues of iteratorValues) {
 //[] filter -> undefined. 
 // does not change the original array. 
 const age = [45,32,80,' ',16,15,18]
-const result = age.filter(checkIfAbove18);
+const resultss = age.filter(checkIfAbove18);
 
 function checkIfAbove18(age){
   return age >= 18;
 }
 
-console.log(result)
+console.log(resultss)
 
 //syntax 
 // Array.filter(function(valueofthecurrentelement){});
@@ -367,9 +367,9 @@ console.log(result)
 // filtering for invalid entries in array 
 //our new array should contain non-zero and numeric 
 
-let array = [{id: 3, name:'joseph'},{id: 4},{id: 0},{id: null},{id: 'undefined'},{id: 5},{ }];
+let arrasy = [{id: 3, name:'joseph'},{id: 4},{id: 0},{id: null},{id: 'undefined'},{id: 5},{ }];
 let count = 0;
-let resultTwo = array.filter(filterIds);
+let resultTwo = arrasy.filter(filterIds);
 //count of invalid entries
 function filterIds(array) {
   //logical code
@@ -431,4 +431,4 @@ function getDiff(diff,numberRight) {
 
 
 // more on arrays here 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#check_if_an_array_contains_a_certain_item
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#check_if_an_array_contains_a_certain_item
