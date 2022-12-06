@@ -147,7 +147,7 @@ for (let key in person2 ){
     // > ES8 , Object.entries() : keys and values , Object.values()
     if(person2.hasOwnProperty(key)){
     //execute different functions on the key 
-    console.log(`${key} : ${person2[key]}`);
+    console.log(`${person2[key]}`);
     }
 }
 
