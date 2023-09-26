@@ -83,4 +83,33 @@ def merge_strings(s1, s2)
   end
   
 
-  puts merge_strings("abcde", "cdefgh")  # output: "abcdefgh"
+  puts merge_strings("abc", "abc")  # output: "abcdefgh"
+# syntax explanation: 
+
+# In the expression s1[-i..-1], the .. operator creates a range object that includes the last i characters of s1.
+#  The -1 argument means that the end of the range is the last character of s1. The negative index is used to count the positions
+#   from the end of the string, so s1[-i] would be the i-th character from the end.
+
+# Similarly, in the expression s2[0...i], the ... operator creates a range object that includes the first i characters of s2. 
+# The 0 argument means that the start of the range is the first character of s2. The ... operator is used to exclude the i-th character from the range.
+
+# So, the expression s1[-i..-1] gets the last i characters of s1, and the expression s2[0...i] gets the first i characters of s2. 
+# The if statement then checks if these two substrings are equal, which means they are a possible overlap.
+
+# camel case question 
+# Challenge 1: CamelCase Method(Toy Problem)
+# Write simple .camelCase method for strings. All words must have their first letter capitalized without spaces.
+
+# For instance:
+
+# 'hello case'.camelcase => HelloCase
+
+# 'camel case word'.camelcase => CamelCaseWord
+# 1. first split the string into an array of words using the split method
+# 2. map over each word to capitalize the first letter using capitalize
+# 3. join the words back into a single string using the join method.
+def camelCase(a)
+  a.split.map(&:capitalize).join(' ')
+end 
+
+puts camelCase("joseph mbugua")

@@ -60,3 +60,17 @@ function mergeStrings(s1, s2) {
   console.log(mergeStrings("abaabaab", "aabaabab"));  // output: "abaabaabab"
 
 
+
+  // camel case question
+function cameLCase(a){
+  return a.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(''); 
+}
+
+// pseudocode 
+// 1. Split characters to array using .split method 
+// 2. get first letter using charAt method 
+// 3. Make it uppercase using the toUpperCase method
+// 4. slice will take care of the other parts of the word by extracting / exempting characters from position one from being uppercased 
+// 5. we then concatenate and join the two parts of the functions using .join . 
+
+console.log(cameLCase("joseph mbugua"))
