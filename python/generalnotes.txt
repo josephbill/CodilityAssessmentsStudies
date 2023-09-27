@@ -1,0 +1,79 @@
+WHAT IS AN ALGORITHM ? 
+
+- Step by step procedure or set of rules for solving a specific problem or accomplishing a particular task. 
+- well defined sequence of computational steps that transforms input data into an output or achieves a desired result. 
+
+KEY CHARACTERISTICS OF ALGO's 
+
+1. Well defined 
+2. Input and output : the input can be any data type : (arrays, numbers , strings , object)             
+3. Deterministic : meaning that given the same input they will always produce the same output   
+4. Finiteness : must have a finite number of steps (the algo should terminate at some point)
+5. Efficiency : - minimize number of steps 
+                - optimizing resource (time and memory) usage (technique used)
+                - achieving the desired outcome with the least amount of computational effort. 
+
+
+REPRESENTATION OF AN ALGO 
+
+- natural language descriptions : (English statements)
+- Flowcharts : https://www.modernanalyst.com/Careers/InterviewQuestions/tabid/128/ID/6146/What-is-a-Flowchart-Diagram.aspx 
+- Pseudocode : short code statements 
+
+
+   *    given input string x , return the reverse of the string using js
+
+     function reverseString(inputString):
+       1. intialize an empty string variable to store the reversed string 
+       2. Loop the inputString from last to first 
+       3. append the current character to the empty string variable 
+       4. return the reversed string.
+       
+
+- Actual programming code i.e. code and code comments.
+
+
+BIG O notation.  
+
+this is a mathematical notation used to describe the performance or complexity of an algorithm. 
+
+provides an approximation of how the runtime or resource usage of an algorithm scales with the size of the input. 
+
+the O stands for order of -< expression of an algorithms worst case scenario in terms time complexity and 
+
+SYNTAX OF A NOTATION 
+
+O(f(n)) where f(n) -> represents the growth rate of the algo as the input size 'n' increases 
+
+
+
+THE COMMON TIME COMPLEXITY CLASSES ARE AS FOLLOWS 
+
+
+1. 0(1) => constant time => the algo's runtime remains constant regardless of the input size.The algo's efficiency does not depend on the input size. 
+2. 0(log n) => logarithmic time => the algo's runtime grows with input size (grows logarithmically)
+3. 0(n) => Linear Time => the algo's runtime grows linearly with the input size i.e. if the input size doubles then the runtime also doubles (example is iterating an array or list)
+4. 0(n log n) => Linearithmic time => the algo's runtime grows in proportion to the product of the input size and the logarithim of the input size (example merge sort)
+5. O(n²) => Quadratic time => the algo's runtime grows quadaratically with the input size. It indicates nested iterations or comparisons of every element with every
+other element => (Bubble sorts , Selection sorts)
+
+6. O(2^n) - Exponetial time  : highly inefficient anf considered impractical for large inputs. 
+7. O(n!) - Factorial time => the algo's runtime grows factorially with the input size : brute force. 
+ 
+
+
+logarithimic growth 
+
+input size  (n) 
+as n increases , the runtime and the resource usage of the algo increases at a much slower rate compared to the input size itself (growth is sublinear)
+
+[a,b] = > 3 minutes 
+[a,b,c,d,e,f] => 4 minutes
+
+factorial : is the product of all positive integers less than or equal to n 
+
+
+LINEAR DATA STRUCTURE vs NON-LINEAR DATA STRUCTURE 
+
+Linear structure : Data is organized in a sequential manner , where each ELEMENT(integers, strings , objects)
+ or NODE (pointer/value) is linked to its preceeding or succeding element
