@@ -75,5 +75,20 @@ factorial : is the product of all positive integers less than or equal to n
 
 LINEAR DATA STRUCTURE vs NON-LINEAR DATA STRUCTURE 
 
-Linear structure : Data is organized in a sequential manner , where each ELEMENT(integers, strings , objects)
- or NODE (pointer/value) is linked to its preceeding or succeding element
+Linear structure : Data is organized in a sequential manner () , where each ELEMENT(integers, strings , objects)
+ or NODE (pointer/value) is linked to its preceeding or succeeding element.
+
+ Concepts 
+ Arrays/ Sequences (Lists, tuples) , Linked Lists , Stacks (LIFO) , Queues (FIFO) 
+
+Non Linear Data structures : data is not organized in a sequential manner (presence of multiple connections 
+/ relationships )
+
+Concepts 
+
+Dictionary /Objects / hash tables , trees , graphs .....  
+
+
+
+10 MINUTE BREAK 
+RESUME 10:40 AM
