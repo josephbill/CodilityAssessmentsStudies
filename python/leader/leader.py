@@ -2,6 +2,7 @@ def find_leader(n):
     candidate = None 
     count = 0
 
+# getting our candidate 
     for num in n:
         if count == 0:
             candidate = num
