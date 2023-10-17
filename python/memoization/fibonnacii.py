@@ -1,29 +1,24 @@
-# fibonnacci sequence without memoization 
-# define the nth term of a fibonnaci sequece 
-# Implicit memoization : cache the return value for similar inputs passed to function
+# 0,1,1,2,3,5,8....
 fibonnaci_sequence = {}
-def fibonnaci(n):
-#  check if the result is in dict. for the nth term 
-   if n in fibonnaci_sequence:
-     return fibonnaci_sequence[n]
+def fibonnaci(n): 
+    # check if the calc. of n is stored in the dictionary 
+    # fibonnaci_sequence[n]  : access : storage 
+    if n in fibonnaci_sequence:
+        return fibonnaci_sequence[n]
+    
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    elif n > 2:
+        # create our fibonnaci value 
+        value = fibonnaci(n-1) + fibonnaci(n-2) 
+        # store the value to dictionary 
+        fibonnaci_sequence[n] = value
 
-   if n == 1:
-    return 1
-   elif n == 2: 
-     return 1 
-   elif n > 2: 
-    #  sequence dictates the that the elements are a sum of the previous two numbers in the sequence 
-    value = fibonnaci(n-1) + fibonnaci(n-2)
-
-    fibonnaci_sequence[n] = value
-
-   return value
-
-
-# above process is slow because of the recursive actions our algo. needs to make 
-# e.g if the nth term is 5 , it means the fibonnacci(3) and fibonnaci(2) needs to be calculated 
-# , indicating that recursive functions cause the delay
-
+    return value
 
 for n in range(1,101):
-  print(n, ":" , fibonnaci(n))
+    print(n, ":" , fibonnaci(n))
+
+
