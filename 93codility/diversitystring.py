@@ -8,7 +8,7 @@ def solution(N):
     
     # maximum number of distinct letters 
     max_letters = 1
-    for i in range(1,27): # 26 letters 
+    for i in range(1,len(alphabet)): # 26 letters 
         if N % i == 0:
             max_letters = i 
     print(max_letters)
