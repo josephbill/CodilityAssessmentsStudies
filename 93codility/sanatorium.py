@@ -6,11 +6,13 @@ def solution(A):
     rooms = []
     
     for pref in sorted_guests:
+        # track a current room status 
         placed = False
 
         # Check existing rooms to see if the guest can be accommodated.
         for i, room in enumerate(rooms):
-            if len(room) + 1 <= pref and len(room) + 1 <= rooms[i][0]:  # Check if adding guest doesn't exceed room's and guest's preference.
+            # if the r
+            if len(room) + 1 <= pref:  # Check if adding guest doesn't exceed room's and guest's preference.
                 rooms[i].append(pref)
                 placed = True
                 break
@@ -20,3 +22,8 @@ def solution(A):
             rooms.append([pref])
 
     return len(rooms)
+
+# idea is to check the size of the room i.e. the array rooms and counter check it against the pref array values 
+A = [5,2,5,6]
+
+print(solution(A))
