@@ -18,6 +18,9 @@ def isIn(char, aStr):
    #   test character 
    midIndex = len(aStr)//2
    midChar = aStr[midIndex]
+   
+   print("search char " , char)
+   print("mid char ",midChar)
    if char == midChar:
       # We found the character!
       return True
@@ -25,9 +28,12 @@ def isIn(char, aStr):
    # Recursive case: If the test character is smaller than the middle 
    #  character, recursively search on the first half of aStr
    elif char < midChar:
+      print("mid ting ", aStr[:midIndex])
       return isIn(char, aStr[:midIndex])
 
    # Otherwise the test character is larger than the middle character,
    #  so recursively search on the last half of aStr
    else:
       return isIn(char, aStr[midIndex+1:])
+   
+print(isIn('a','I am the boy'))
