@@ -1,0 +1,24 @@
+1. Good Programming ? 
+    - More code not necessarily a good thing 
+    - Measure good programmers by amount of functionality and mechanisms to achieve decomposition and abstraction 
+
+    Functions are the basis of good programming / computational thinking , offers modularity : decomposition and
+    abstraction.(the idea of building and just using provided correct type of inputs / not having to worry if different input will work  )
+
+    Example of decomposition
+     - Vancouver Olympics Opening ceremony : they projected a large image at the center of the rink
+     - How it worked : projecting the large image was decomposed into separate tasks for separate projectors 
+     - each projector takes an input , and produces a separate output , they work in synchrony to produce the larger image 
+
+     Thats decomposition 
+      = take different devices 
+      = have them synchronize , 
+      = produce an end goal.
+
+    In code : 
+      = Break up a problem into different self contained pieces 
+      = build the solutions to the small problems 
+      = synchronize them in a sequence of steps 
+      = produce an end result 
+
+      

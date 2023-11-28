@@ -1,0 +1,21 @@
+- A bisection search is a type of algorithmic thinking that focuses on efficiently
+ locating a specific item or value within a sorted list or array. 
+- Particularly useful in sorting large datasets. 
+
+How it works 
+1. Precondition : list must be sorted either in ascending or descending order 
+2. Initialization: You start by defining two pointers, one at the beginning (left) and one at the end (right) of the sorted list.
+
+3. Search Process:
+
+- Calculate the middle index of the current search range as (left + right) / 2.
+- Compare the item at the middle index to the target value.
+- If the middle item is equal to the target, you've found the item, and the search is successful.
+- If the middle item is greater than the target, adjust the right pointer to be one less than the middle index, narrowing the search range to the left half of the current range.
+- If the middle item is less than the target, adjust the left pointer to be one more than the middle index, narrowing the search range to the right half of the current range.
+- Repeat the process by recalculating the middle index and comparing until you either find the target or determine that it doesn't exist in the list.
+
+4. Termination: The search terminates when the left pointer is greater than the right pointer, indicating that the target item is not present in the list.
+
+Bisection search is commonly used in computer science and programming for tasks like searching in databases, finding elements in sorted arrays, and various other scenarios where efficient search is required.
+

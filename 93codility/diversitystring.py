@@ -11,6 +11,8 @@ def solution(N):
     for i in range(1,len(alphabet)): # 26 letters 
         if N % i == 0:
             max_letters = i 
+
+            
     print(max_letters)
     # repetition 
     repetition = N // max_letters
@@ -25,4 +27,4 @@ def solution(N):
 
 
 
-print(solution(31))
+print(solution(3))

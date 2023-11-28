@@ -1,5 +1,6 @@
 def solution(A):
     # First, check if it is possible to have 10 bricks in each box
+    #check to actual check if we can have 10 bricks in all boxes 
     total_bricks = sum(A)
     n_boxes = len(A)
     if total_bricks != 10 * n_boxes:
