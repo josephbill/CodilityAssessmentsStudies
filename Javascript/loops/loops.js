@@ -85,14 +85,21 @@
 // * * *
 // * * * *
 
+// 1. positive integer : n 
+// 2. trasversal aspect : i need to move from 4 to 1 or 1 to 4 
+// 3. each asterisks separated by spaces
+// 4. n represents the number of rows 
+
 function printAsters(n) {
+   let result = ''
    for(let i = 1; i <= n; i++){
-      let row = '';
+      let row = ''; // the first loop // creates the rows.
       for(let j=1; j <= i; j++){
         row += '* ';
       }
-      console.log(row)
+      result += row + '\n';
    }
+   return result
 }
-let n = 4
+let n = 10
 console.log(printAsters(n))

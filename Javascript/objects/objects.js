@@ -136,7 +136,7 @@ console.log(departmentIT.toString()); //override in string.
 let person  = {
     gender: 'male'
 }
-
+// make copies by inheritance
 let person2 = Object.create(person);
 person2.name = "joseph";
 person2.nationality = "kenyan";

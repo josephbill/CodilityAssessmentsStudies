@@ -4,7 +4,7 @@ let cars = [
        type: "minivan",
        registration: new Date('2022-12-7'),
        capacity: 7
-    },
+    },    
     {
         color: "red",
         type: "hatchback",

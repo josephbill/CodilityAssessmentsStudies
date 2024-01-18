@@ -9,6 +9,7 @@ console.log(fruits[0]);
 fruits[1]; // Banana
 // The index of an array's last element is always one less than the length of the array.
 fruits[fruits.length - 1]; // Banana
+// fruits.length + 1 : index bound error in array loops. 
 // Using a index number larger than the array's length
 // returns 'undefined'.
 fruits[99]; // undefined
@@ -19,7 +20,7 @@ console.log(fruits.indexOf('banana')) //returns one
 //check if an array contains a certain item 
 fruits.includes('Banana'); //returns true
 fruits.includes('cherry'); //returns false 
-
+// let arrayno = [1,2,3,4,5,6]
 //using index of to check if array contains the given item
 fruits.indexOf('Banana') !== -1; // true
 fruits.indexOf('Cherry') !== -1; // false
@@ -71,9 +72,14 @@ console.log(fruits_two.unshift('Strawberry'));
 //iterate over an array 
 
 //use a for of. .
+// elements
 const fruits_three = ['Apple', 'Mango', 'Cherry'];
 for (const fruit of fruits_three) {
   console.log(fruits_three);
+}
+// index position 
+for(let i=0; i < fruits_three.length; i++){
+      fruits_three[i]
 }
 
 // every method 

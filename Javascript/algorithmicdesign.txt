@@ -1,0 +1,32 @@
+The process of algorithmic design : 
+
+1. Problem defination : clearly understand the problem that needs to 
+be solved. Identifying the inputs , outputs and constraints (assumptions)
+of the problem.  
+break your problem into smaller problem. (divide and conquer)
+
+2. Algorithm selection : choosing an appropriate algorithm that can
+solve the problem. Consider factors such as time complexity (BIG O Notation)
+, space complexity and the nature of problem (e.g. sorting,searching
+,optimization) 
+
+3. Algorithm design : develop a detailed step by step procedure that 
+will describe how the algorithm solves the problem. This can be done 
+using pseudocode (human readable lang. that resembles code.), simple 
+notation , flowcharts .... and any other suitable notation.
+
+4. Implementation : Translate the algo. design into a programming language
+
+5. Testing and debugging : Identify and fix any bugs (console.log)
+(typeof) =====  (write unit test / test cases)
+
+6. Analysis : analyzing the performance of the algorithm. (can you Identify
+your solutions BIG O notation.)
+
+7. optimization : if necessary ,optimize the code. Applying techniques
+such as algo. tuning , data structure optimization and parallelization. 
+
+= iteration
+= arrays and objects 
+= recursion 
+= breakout room . => algo. steps => code 
