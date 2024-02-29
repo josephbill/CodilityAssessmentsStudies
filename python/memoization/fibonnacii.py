@@ -1,24 +1,29 @@
-# 0,1,1,2,3,5,8....
-fibonnaci_sequence = {}
-def fibonnaci(n): 
-    # check if the calc. of n is stored in the dictionary 
-    # fibonnaci_sequence[n]  : access : storage 
-    if n in fibonnaci_sequence:
-        return fibonnaci_sequence[n]
-    
-    if n == 1:
+
+
+
+fibonnacii_sequence = {}
+def fibonnacii(n):
+    # 0,1 , 1,1 
+    # check if nth already exists in the dictionary 
+    if n in fibonnacii_sequence:
+        return fibonnacii_sequence[n]
+        
+    if n == 1: 
         return 1
     elif n == 2:
-        return 1
+        return 1 
     elif n > 2:
-        # create our fibonnaci value 
-        value = fibonnaci(n-1) + fibonnaci(n-2) 
-        # store the value to dictionary 
-        fibonnaci_sequence[n] = value
-
-    return value
-
-for n in range(1,101):
-    print(n, ":" , fibonnaci(n))
-
-
+        value  = fibonnacii(n-1) + fibonnacii(n-2)
+        # store the value to the dictionary 
+        fibonnacii_sequence[n]  = value
+                    
+    return value 
+    
+for n in range(1,500):
+    print(n, ":" , fibonnacii(n))
+    
+    
+## Look up a list , dictionary, sets 
+## 
+    
+    
