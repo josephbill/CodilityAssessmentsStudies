@@ -1,6 +1,3 @@
-
-
-
 fibonnacii_sequence = {}
 def fibonnacii(n):
     # 0,1 , 1,1 

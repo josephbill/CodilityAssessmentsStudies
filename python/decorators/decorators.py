@@ -4,6 +4,9 @@ actual code
 
 They take in a function as input , and return a new function 
 
+- logging : print 
+- authentication
+
 '''
 
 # define a decorator 

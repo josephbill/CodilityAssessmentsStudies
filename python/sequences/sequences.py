@@ -87,7 +87,7 @@ Write a function that takes two lists of integers as input and returns a list co
  list2 = [4,5,6,7,8]
 output [4,5]
 '''
-list1 = [1,2,3,4,5]
+list1 = [1,2,3,[1,2,3],5]
 list2 = [4,5,6,7,8]
 def commonelements(list1,list2):
     common = set(list1) & (set(list2))
