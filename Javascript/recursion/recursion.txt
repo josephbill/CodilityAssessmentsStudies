@@ -1,0 +1,11 @@
+Recursion is a programming concept where a function call itself directly or indirectly in order to solve 
+a problem.
+
+Processes for an efficient recursion 
+1. Base case defination : what brings an end to recursion
+2. Divide and conquer : breakdown the problem into smaller, simpler
+instances of the same problem. Each recursive call should bring the 
+problem closer to the base case. 
+3. Avoid redudant work : fibonnacci sequence -> using recursion :
+Two main algo. is use : memoization , dynamic programming (algo) :
+OPTIMIZATION IN RECURSION. 

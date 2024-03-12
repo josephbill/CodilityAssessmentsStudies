@@ -76,4 +76,78 @@ class
 3. Inheritance : allows classes(subclass, derived class) to inherit attributes and methods from another class (superclass, base class)
 Aids in reusablity and establishes relationships btw classes 
 4. Polymorphism : Allows methods to do different things based on the object that calls them.
+
+Components of OOP 
+Class Attributes and methods : they belong to the class and not the instances (objects)
+
+1. Class Attributes 
+- these are variables shared by all instances of the class 
+- defined within the class block outside any method(s)
+- they can be accessed using the class name or the instance of the class 
+
 '''
+
+class Vehicle: 
+    # class attribute 
+    wheel = 4 
+
+    # instance attributes/methods 
+    def __init__(self, brand , model) -> None:
+        self.brand  = brand
+        self.model = model
+
+    brakessytem = False
+    def wheeler(self):
+        print(self.wheel)
+
+
+# Access using class name 
+print(Vehicle.wheel) 
+# access using an instance (object)
+car1 = Vehicle("Toyota", "Camry")
+print(car1.wheel) # 4
+car1.wheel = 6
+Vehicle.wheel = 10
+# these attributes can be modified directly only from instance 
+print(car1.wheel) # 6
+print(Vehicle.wheel)
+
+'''
+Class methods 
+- these methods are bound to the classes rather than the instances 
+- they are defined using the @classmethod decorator , and takes a special parameter 'cls' which references the 
+class itself 
+- class methods can access and modify class attributes but NOT instance attributes directly. 
+'''
+
+class Circle: 
+    pi = 3.14 
+
+    def __init__(self, radius) -> None:
+        self.radius = radius
+
+    # class methods 
+    # how to define and access class attributes 
+    @classmethod
+    def change_pi(cls, new_pi):
+        cls.pi = new_pi
+
+    @classmethod
+    def revert_pi(cls):
+        cls.change_pi(3.14)
+      
+
+    def printRadius(self):
+        print(f"{self.radius}")
+
+
+# access class attributes before change 
+print(Circle.pi) 
+# calling the class methods 
+Circle.change_pi(3.14159)
+# Circle.printRadius()  #works only for object creation
+# class attribute after change 
+print(Circle.pi)
+# reverting pi
+Circle.revert_pi()
+print(Circle.pi)
