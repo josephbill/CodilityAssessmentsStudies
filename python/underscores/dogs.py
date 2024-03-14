@@ -15,9 +15,6 @@ class Dog:
         self.name = name
         self.breed = breed
 
-    def printName(self):
-        # self.name 
-
     @property
     def name(self):
         """The name property"""

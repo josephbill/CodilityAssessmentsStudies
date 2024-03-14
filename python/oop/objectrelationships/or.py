@@ -131,6 +131,8 @@ book2 = Book("Data Science Essentials")
 author1 = Author("Joseph Mbugua")
 author2 = Author("Mary")
 
+author1.write_book(book1)
+
 # establish the authorship 
 authorship1 = Authorship(book1, author1)
 authorship2 = Authorship(book1, author2)
