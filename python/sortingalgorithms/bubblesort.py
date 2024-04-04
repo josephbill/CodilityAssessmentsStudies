@@ -9,15 +9,22 @@ def bubble_sort(arr):
         # ? inner loop should iterate through the array up to the unsorted portion 
         for j in range(0, n-i-1):
          print("inner loop") 
-         print(j)
-        #  check if the currentl element is greater than the next element 
+         print(arr[j])
+        #  check if the current element is greater than the next element 
         # to sort in ascending > 
         # to sort in descending <
-         if arr[j] < arr[j+1]:
+         if arr[j] > arr[j+1]:
             # swap the indexes  // according to your sort aspect 
             arr[j], arr[j+1] = arr[j+1] , arr[j]
+          
 
 
-arr = [64,34,25,12,22,11,90]
+# arr = [64, 34, 25, 12, 22, 11, 90]
+arr = ["banana", "apple", "cherry", "date", "fig"]
+
+# 34,25,12,22,11,64,90
+# 25,12,22,11,34,64,90
+# 12,22,11,25,34,64,90
+# 11,12,22,25,34,64,90
 bubble_sort(arr)
 print("Sorted array : " , arr)
